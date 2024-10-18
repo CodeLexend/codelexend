@@ -1,47 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeLexend - Programming and Designing!</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-
-<body>
-    <header class="header">
-        <a href="#" class="logo">CodeLexend</a>
-
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <a href="#">Discord</a>
-        </nav>
-    </header>
-
-    <section class="home">
-        <div class="home-content">
-            <h1>Hey, it's Lexend</h1>
-            <h3>Welcome to CodeLexend!</h3>
-            <p>CodeLexend offer you premium web-development assistance and services! We build you websites, as per your need.</p>
-            <div class="btn-box">
-                <a href="#">Contact Us</a>
-            </div>    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeLexend - Web Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">CodeLexend</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Services</a></li>
+          <li><a href="#projects">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">CodeLexend</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="home-sci"> 
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-twitter' style='color:#02838a' ></i></a>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Pricing</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-        <div class="container">
-            <img src="components/CodeLexend__1_-removebg-preview.png" alt="CodeLexend">
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sainath,</h1>
+        <p class="section__text__p2">Web/App Developer, welcome to my site! Click on about me to know more.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#about'">
+            About Me
+          </button>
         </div>
-        <span class="home-imgHover"></span>
+        
+      </div>
     </section>
-</body>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Pursuing CSE<br />Data Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello, This is Sainath (a.k.a. Lexend). I'm a Web developer and a Graphic Designer working as an individual. While writing this, I have an experience of over 3 years in web development, application development (partially game development) and graphic designing. I started learning through various sources across the web and now, with the experience I have, I'm sure I can help people with their brand to grow within the online world.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <p class="exp_info">Check out if I'll be able to help you as per your work!</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Interested in hiring me?</p>
+      <h1 class="price_title">My Pricing Plans (3)</h1>
+      <div class="experience-details-container">
+
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Individual</h2>
+            <p class="indvprice">₹31,999</p>
+            <p class="1y">(1 year hosting free)</p>
+            <p class="pagespp">Upto 3 pages</p>
+            <p class="frs">Free Domain</p>
+            <p class="frs">SSL Certificate</p>
+            <p class="frs">Basic Assistance</p>
+          </div>
+          
+          <div class="details-container color-container">
+              <h2 class="experience-sub-title project-title">Startup</h2>
+              <p class="strprice">₹89,999</p>
+              <p class="1y">(1 year hosting free)</p>
+              <p class="pagespp">Upto 8 pages</p>
+              <p class="frs">All from individual +</p>
+            <p class="frs">Search Engine Appearance</p>
+            <p class="frs">Minimal Customizability</p>
+            </div>
+          
+            <div class="details-container color-container">
+             <h2 class="experience-sub-title project-title">Enterprise</h2>
+             <p class="enterprice">₹289,999</p>
+             <p class="1y">(1 year hosting free)</p>
+             <p class="pagespp">Upto 40 pages</p>
+             <p class="frs">All from Startup +</p>
+            <p class="frs">SEO Tools, Multi-Page Browser Appearance</p>
+            <p class="frs">High Customizability</p>
+
+        </div>
+        
+      </div>
+      <div class="button-container">
+        <a href= "mailto:codelexend@gmail.com" target="_blank" class="my-button">Contact Now</a>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:codelexend@gmail.com" target="_blank">codelexend@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/ig.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/lex.sainath" target="_blank">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 CodeLexend. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
